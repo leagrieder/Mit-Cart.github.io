@@ -1,0 +1,141 @@
+.esp8266 {
+text-align: center;
+}
+
+.tes {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+#stopBtn, #led-button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .tes {
+    flex-direction: column;
+  }
+
+  #stopBtn, #led-button {
+    margin: 5px 0;
+  }
+}
+
+
+ #left-button {
+  margin-top: 167px;
+  margin-right: 47px;
+  width: 94px;
+  height: 94px;
+ }
+
+ #right-button {
+  margin-top: 167px;
+  margin-right: 23px;
+  width: 94px;
+  height: 94px;
+ }
+
+ #forwardBtn {
+  margin-top: -26px;
+  margin-left: -38px;
+  width: 94px;
+  height: 94px;
+ }
+
+ #backwardBtn {
+  margin-top: 15px;
+  margin-right: 19px;
+  width: 94px;
+  height: 94px;
+ }
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background-color: #ccc;
+}
+
+.left-arrow:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid black;
+}
+
+.up-arrow:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid black;
+}
+
+.right-arrow:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+}
+
+.down-arrow:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black;
+}
+
+#stopBtn {
+  background-color: red;
+  margin-left: 65px;
+  margin-bottom: 64px;
+  margin-top: 27px;
+  width: 62px;
+  height: 42px;
+  border-radius: 5px;
+}
+
+#stopBtn:hover {
+  background-color: #ccc;
+}
+
+#led-button {
+  background-color: #0ef6fa;
+  margin-left: 586px;
+  margin-bottom: 64px;
+  margin-top: 27px;
+  width: 62px;
+  height: 42px;
+  border-radius: 5px;
+}
+
+#led-button:hover {
+  background-color: #ccc;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>ESP8266 Control</title>
+</head>
+
+<body>
+
+  <div class="esp8266">
+  <h1 class="text-center">ESP8266 Control</h1>
+  <div class="controls">
+    <div class="arrow left-arrow" id="left-button"></div>
+    <div class="arrow up-arrow" id="forwardBtn"></div>
+    <div class="arrow right-arrow" id="right-button"></div>
+    <div class="arrow down-arrow" id="backwardBtn"></div>
+
+  </div>
+
+  <div class="tes">
+    <button id="stopBtn">Stop</button>
+    <button id="led-button">LED OFF</button>
+  </div>
+
+
+
+  <div class="input-group">
+    <label for="speed-range">speed motor:</label>
+    <input type="range" id="speed-range" min="0" max="100" step="1" value="50">
+    <input type="number" id="angleNumber" min="0" max="100" step="1" value="50">
+    <button id="setSpeedBtn">Set</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Aquí va todo tu código de app.js
+    });
+
+    var script = document.createElement("script");
+    script.src = "app.js";
+    document.body.appendChild(script);
+  </script>
+
+
+</body>
+
+</html>
