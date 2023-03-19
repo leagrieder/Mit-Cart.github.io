@@ -45,27 +45,27 @@ setSpeedBtn.addEventListener('click', () => {
 });
 
 forwardBtn.addEventListener('click', () => {
-  sendRequest('forward');
+  sendRequest('/forward');
   console.log("Forward button clicked");
 });
 
 backwardBtn.addEventListener('click', () => {
-  sendRequest('backward');
+  sendRequest('/backward');
   console.log("Backward button clicked");
 });
 
 rightBtn.addEventListener('click', () => {
-  sendRequest('right');
+  sendRequest('/right');
   console.log("/right button clicked");
 });
 
 leftBtn.addEventListener('click', () => {
-  sendRequest('left');
+  sendRequest('/left');
   console.log("/left button clicked");
 });
 
 stopBtn.addEventListener('click', () => {
-  sendRequest('stop');
+  sendRequest('/stop');
   console.log("Stop button clicked");
 });
 
