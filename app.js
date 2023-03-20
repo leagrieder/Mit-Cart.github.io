@@ -15,7 +15,7 @@ let ledState = false;
 const ESP8266_IP = '192.168.1.128'; // Cambiar por la dirección IP de tu ESP8266
 
 function sendRequest(path) {
-  fetch(`http://${ESP8266_IP}/${path}`)
+  fetch(`https://${ESP8266_IP}/${path}`)
     .then(response => {
       if (response.status === 200) {
         console.log(`Request successful: ${path}`);
