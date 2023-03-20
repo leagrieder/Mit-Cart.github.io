@@ -15,16 +15,16 @@ let ledState = false;
 const ESP8266_IP = '192.168.1.128'; // Cambiar por la dirección IP de tu ESP8266
 
 function sendRequest(path) {
-  fetch(`https://${ESP8266_IP}/${path}`)
-    .then(response => {
-      if (response.status === 200) {
-        console.log(`Request successful: ${path}`);
-      } else {
-        console.error(`Error sending request: ${response.status}`);
-      }
-    })
-    .catch(err => console.error(`Error sending request: ${err}`));
-}
+    fetch(`https://${ESP8266_IP}/${path}`)
+      .then(response => {
+        if (response.status === 200) {
+          console.log(`Request successful: ${path}`);
+        } else {
+          console.error(`Error sending request: ${response.status}`);
+        }
+      })
+      .catch(err => console.error(`Error sending request: ${err}`));
+  }
 
 function sendMotorSpeedRequest(speed) {
   const percent = Math.round(speed / 100 * 255);
